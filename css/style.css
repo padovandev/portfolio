@@ -1,0 +1,293 @@
+/* Import fontes */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+body {
+    height: 100vh;
+}
+
+/* HEADER */
+
+.container-interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 20px 5px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 255, 0.25);
+}
+
+header a {
+    color: rgb(36, 36, 36);
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover {
+    color: rgb(25, 25, 103);
+    transform: scale(1.10);
+
+}
+
+header>.container-interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-menu {
+    margin-right: center;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header .btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 500px;
+    background-color: rgb(25, 25, 103);
+    color: white;
+    border: 0;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+header .btn-contato button:hover {
+    box-shadow: 0px 0px 8px rgb(25, 25, 103);
+    transition: .4s;
+}
+
+/* MAIN */
+.content-top {
+    padding: 40px 6%;
+}
+
+.content-top .flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 190px;
+}
+
+.princ-text-item {
+    font-family: "Lato", sans-serif;
+    font-size: 42px;
+    color: rgb(25, 25, 103);
+    line-height: 40px;
+    font-weight: bolder;
+}
+
+.princ-desc-item {
+    gap: 20px;
+    margin: 40px 0px;
+}
+
+section .content-btn-contact button {
+    padding: 17px 40px;
+    font-size: 18px;
+    font-weight: 500px;
+    background-color: rgb(25, 25, 103);
+    color: white;
+    border: 0;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: .2s;
+
+}
+
+section .content-btn-contact button:hover {
+    box-shadow: 0px 0px 8px rgb(25, 25, 103);
+    transform: scale(1.05);
+}
+
+.img-site {
+    position: relative;
+    animation: animFlutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes animFlutuar {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 20px;
+    }
+}
+
+/* PARTES DAS HABILIDADES */
+
+.content-title-skills {
+    color: rgb(25, 25, 103);
+    font-size: 42px;
+    text-align: center;
+}
+
+.content-skills {
+    box-shadow: 0 0 8px rgba(0, 0, 255, 20%);
+    padding: 40px 6%;
+}
+
+.content-skills .flex-skills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skills-title {
+    font-family: "Lato", sans-serif;
+    font-size: 25px;
+    color: rgb(25, 25, 103);
+    line-height: 40px;
+    font-weight: bolder;
+}
+
+.skills-desc {
+    gap: 20px;
+    margin: 10px 0px;
+}
+
+.flex-skills {
+    padding: 50px;
+}
+
+.content-box-skills {
+    display: inline-block;
+    justify-content: space-around;
+    padding: 30px;
+    transition: .2s;
+    border-radius: 20px;
+    box-shadow: 0 0 8px rgb(21, 21, 137, 2 0%);
+    ;
+}
+
+.content-box-skills:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 8px rgb(21, 21, 137);
+}
+
+.content-box-skills i {
+    color: rgb(25, 25, 103);
+    font-size: 60px;
+}
+
+.content-box-skills h3 {
+    margin: 15px 0;
+}
+
+/* SOBRE MIM */
+
+.content-title-aboutme {
+    color: rgb(25, 25, 103);
+    font-size: 38px;
+    /* text-align: center; */
+}
+
+.content-aboutme {
+    padding: 40px 4%;
+
+}
+
+.content-aboutme .flex-skills {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.content-box-aboutme {
+    display: inline-block;
+    justify-content: space-around;
+    padding: 30px;
+    transition: .2s;
+    border-radius: 20px;
+    box-shadow: 0 0 8px rgb(21, 21, 137, 2 0%);
+    ;
+}
+
+.content-title-aboutme {
+    gap: 90px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.content-title-aboutme span {
+    display: block;
+}
+
+.content-box-aboutme p {
+    margin: 20px 0;
+}
+
+.img-aboutme img {
+    border-radius: 20px;
+}
+
+.content-box-aboutme .content-btn-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(21, 21, 137);
+    color: white;
+    font-size: 30px;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+.content-box-aboutme .content-btn-social button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 8px rgb(21, 21, 137);
+}
+
+.content-btn-social a {
+    text-decoration: none;
+}
+
+/* PROJETO */
+.content-work {
+    padding: 100px 6%;
+    box-shadow: 0 0 8px rgb(21, 21, 137, 20%);
+
+}
+
+.content-title-work {
+    color: rgb(25, 25, 103);
+    font-size: 38px;
+    /* text-align: center; */
+}
+
+.flex-work img {
+    max-width: 290px;
+    max-height: 350px;
+}
+
+.img-work {
+    border-radius: 30px;
+    box-shadow: 0 0 8px rgba(0, 0, 255, 20%);
+    transition: .2s;
+}
+
+.img-work:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 8px rgba(32, 32, 249, 0.478);
+}
+
+.content-work .flex-work {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}

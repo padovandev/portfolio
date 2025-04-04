@@ -311,7 +311,7 @@ section .content-btn-contact button:hover {
     color: white;
     font-size: 16px;
     transform: scale(1.05);
-    background-color: rgb(13, 13, 170);
+    background-color: rgb(21, 21, 137);
     box-shadow: 0 0 8px rgba(25, 25, 103);
     ;
 }
